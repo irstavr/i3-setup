@@ -108,11 +108,8 @@ set $w3 music
 set $w4 video
 set $w5 chat
 
-
 workspace 1 output HDMI1
 workspace 2 output LVDS1
-
-
 
 # switch to workspace
 bindsym $mod+1 workspace $w1
@@ -223,7 +220,7 @@ bindsym $mod+z exec thunderbird
 bindsym $mod+Shift+a exec atom
 bindsym $mod+Shift+x exec skype
 bindsym $mod+Shift+s exec spotify
-bindsym $mod+Shift+p exec /home/wii/Popcorn-Time/popcorn-time.sh
+bindsym $mod+Shift+p exec ~/Popcorn-Time/popcorn-time.sh
 
 
 #assign application to workspace
@@ -259,13 +256,13 @@ bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
 #exec synapse
 #if you wish to change keyboard layouts uncomment exec setxkbmap
 #exec setxkbmap -option grp:switch,grp:alt_shift_toggle us,de
-exec feh --bg-scale /home/wii/Dropbox/Pics/03338_emptiness_1920x1200.jpg -p default -d -r
+exec feh --bg-scale ~/Dropbox/Pics/03338_emptiness_1920x1200.jpg -p default -d -r
 exec xscreensaver -nosplash
 exec thunar --daemon
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nm-applet
 exec --no-startup-id radiotray
-exec /home/wii/.dropbox-dist/dropboxd
+exec ~/.dropbox-dist/dropboxd
 exec pamac-tray
 exec --no-startup-id compton
 exec pnmixer
